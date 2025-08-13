@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #eee;
+}
+header, nav {
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+}
+a { color: #cfc; }
+main { padding: 1rem; }
+button { background:#333; color:#fff; border:none; padding:0.5rem 1rem; margin:0.2rem; cursor:pointer; }
+button:hover{background:#555;}
+input, select { padding:0.4rem; margin:0.2rem; }
+.table { width:100%; border-collapse:collapse; }
+.table th, .table td { border:1px solid #333; padding:0.5rem; }
+.modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; }
+.modal-content { background:#222; padding:1rem; }
+.hidden { display:none; }
+@media(max-width:600px){
+  nav a { display:block; margin-bottom:0.5rem; }
+}

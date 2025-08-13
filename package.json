@@ -1,0 +1,12 @@
+{
+  "name": "noir-detailing",
+  "version": "1.0.0",
+  "description": "Client-side Noir Detailing management app",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo 'No tests specified'"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

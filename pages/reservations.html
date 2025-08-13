@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reservations</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav><a href="../index.html">Home</a></nav>
+<main>
+<h2>Reservations</h2>
+<form id="res-form">
+  <input type="hidden" id="res-id">
+  <input type="hidden" id="res-customer">
+  <div><label>Name</label><input type="text" id="res-name"></div>
+  <div><label>Phone</label><input type="text" id="res-phone"></div>
+  <div><label>Vehicle</label><input type="text" id="res-vehicle"><label>Licence Plate</label><input type="text" id="res-licence"></div>
+  <div><label>Vehicle Type</label><select id="res-type"><option value="car">Car</option><option value="suv">SUV</option></select></div>
+  <fieldset><legend>Services</legend><div id="res-services"></div></fieldset>
+  <div><label>Date/Time</label><input type="datetime-local" id="res-dt"></div>
+  <button type="submit">Save Reservation</button>
+</form>
+<h3>Upcoming</h3>
+<p id="next-countdown"></p>
+<table class="table" id="res-table"><thead><tr><th>Name</th><th>Vehicle</th><th>Date</th><th>Actions</th></tr></thead><tbody></tbody></table>
+</main>
+<script type="module" src="../js/reservations.js"></script>
+</body>
+</html>
