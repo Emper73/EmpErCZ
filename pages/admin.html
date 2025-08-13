@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav><a href="../index.html">Home</a></nav>
+<main>
+<h2>Admin Panel</h2>
+<section>
+<h3>Services</h3>
+<form id="svc-form">
+<input type="hidden" id="svc-id">
+<label>Name<input type="text" id="svc-name"></label>
+<label>Category<select id="svc-cat"><option>Interior</option><option>Exterior</option><option>Ceramic</option><option>Others</option></select></label>
+<label>Price<input type="number" id="svc-price"></label>
+<button type="submit">Save Service</button>
+</form>
+<ul id="svc-list"></ul>
+</section>
+<section>
+<h3>Discounts</h3>
+<form id="disc-form"><input type="hidden" id="disc-id"><label>Name<input type="text" id="disc-name"></label><label>%<input type="number" id="disc-percent"></label><button type="submit">Save Discount</button></form>
+<ul id="disc-list"></ul>
+</section>
+<section>
+<h3>Surcharges</h3>
+<label><input type="checkbox" id="suv-enabled"> SUV surcharge (10%)</label>
+<div><label>Weight threshold (t)<input type="number" id="weight-thr"></label><label>Rate (%)<input type="number" id="weight-rate"></label></div>
+</section>
+<section>
+<h3>VAT</h3>
+<label>VAT rate % <input type="number" id="vat-rate"></label>
+</section>
+</main>
+<script type="module" src="../js/admin.js"></script>
+</body>
+</html>

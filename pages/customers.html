@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customers</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav><a href="../index.html">Home</a></nav>
+<main>
+<h2>Customers</h2>
+<form id="cust-form">
+  <input type="hidden" id="cust-id">
+  <div><label>Name</label><input type="text" id="cust-name"></div>
+  <div><label>Email</label><input type="email" id="cust-email"></div>
+  <div><label>Phone</label><input type="text" id="cust-phone"></div>
+  <div><label>Vehicle</label><input type="text" id="cust-vehicle"><label>Licence Plate</label><input type="text" id="cust-licence"></div>
+  <button type="submit">Save</button>
+</form>
+<table class="table" id="cust-table"><thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Vehicle</th><th>Actions</th></tr></thead><tbody></tbody></table>
+</main>
+<script type="module" src="../js/customers.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Service Calculator</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav>
+  <a href="../index.html">Home</a>
+</nav>
+<main>
+<h2>Service Calculator</h2>
+<form id="service-form">
+  <div>
+    <label>Customer Name <span id="cust-req">*</span></label>
+    <input type="text" id="customer-name">
+  </div>
+  <div>
+    <label>Vehicle</label>
+    <input type="text" id="vehicle">
+    <label>Licence Plate</label>
+    <input type="text" id="licence">
+  </div>
+  <div>
+    <label>Vehicle Type</label>
+    <select id="vehicle-type">
+      <option value="car">Car</option>
+      <option value="suv">SUV</option>
+    </select>
+    <label>Weight (t)</label>
+    <input type="number" id="weight" step="0.1">
+  </div>
+  <fieldset>
+    <legend>Services</legend>
+    <div id="services-list"></div>
+  </fieldset>
+  <fieldset>
+    <legend>Discounts</legend>
+    <div id="discounts-list"></div>
+  </fieldset>
+  <div>
+    <label><input type="checkbox" id="vat-toggle" checked> Include VAT</label>
+  </div>
+  <div>
+    <strong>Total: <span id="total">0</span></strong>
+  </div>
+  <button type="submit">Create Order</button>
+</form>
+</main>
+<script type="module" src="../js/services.js"></script>
+</body>
+</html>
